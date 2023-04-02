@@ -30,8 +30,7 @@ def process_queries(queries):
             response = 'not found'
             if cur_query.number in contacts:
                 response = contacts[cur_query.number]
-            if response != 'not found':
-                result.append(response)
+            result.append(response)
     return result
 
 if __name__ == '__main__':
